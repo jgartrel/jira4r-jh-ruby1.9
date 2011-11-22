@@ -22,7 +22,7 @@ require 'rake'
 require 'jeweler'
 
 Jeweler::Tasks.new do |gem|
-  gem.name = "jira4r-jh"
+  gem.name = "jira4r-jh-ruby1.9"
   gem.homepage = "http://xircles.rubyhaus.org/projects/jira4r"
   gem.license = "Apache"
   gem.summary = %Q{Clone of latest source from http://xircles.rubyhaus.org/projects/jira4r }
@@ -30,7 +30,7 @@ Jeweler::Tasks.new do |gem|
   gem.email = "jamiehollingworth@gmail.com"
   gem.authors = ["James Stuart", "James Hollingworth"]
 
-  gem.add_runtime_dependency 'soap4r'
+  gem.add_runtime_dependency 'soap4r-ruby1.9'
   gem.add_development_dependency 'rspec', '> 1.2.3'
   gem.add_development_dependency 'jeweler'
   gem.add_development_dependency 'bundler'
@@ -38,7 +38,7 @@ end
 Jeweler::RubygemsDotOrgTasks.new
 
 
-gem 'soap4r'
+gem 'soap4r-ruby1.9'
 
 require 'wsdl/soap/wsdl2ruby'
 
